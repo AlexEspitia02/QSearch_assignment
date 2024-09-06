@@ -1,0 +1,12 @@
+<html>
+<head><title>Welcome</title></head>
+<body>
+    <h1>Welcome, {{ session['username'] }}!</h1>
+    <form action="/image" method="get">
+        Width: <input type="text" name="width" value="100"><br>
+        Height: <input type="text" name="height" value="100"><br>
+        <input type="submit" value="Generate Image">
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>
