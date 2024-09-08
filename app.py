@@ -9,7 +9,7 @@ load_dotenv()
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 
 app.secret_key = os.getenv('SECRET_KEY')
 
